@@ -1,10 +1,11 @@
-# URl Appender
+# URL Appender
 
 # Table of Contents
 
 1. [Introduction](#markdown-header-introduction)
 2. [System Requirements](#markdown-header-system-requirements)
 3. [Local Setup](#markdown-header-local-setup)
+4. [Trello Task list](#markdown-header-trello)
 
 
 
@@ -41,3 +42,7 @@ URL Appender is a full-stack application that works like a 'Link in Bio' tool th
 4. Go to the localhost URl received in step 2, this is the place where you can use this application.
 
 ![Frontend Screenshot](./docs/media/app_frontend.png)
+
+# Trello 
+
+The task list for this small project is stored and managed by [Trello Board](https://trello.com/b/4Ig8x13k/url-append)
