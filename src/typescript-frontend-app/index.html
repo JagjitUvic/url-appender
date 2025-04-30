@@ -1,12 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>URL Appender</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <h1>Enter your URL and Parameters</h1>
+
+    <!-- Form to input the original URL and parameters -->
+    <form id="linkForm">
+      <input type="text" id="url" placeholder="Enter URL" required />
+      <div id="parameter-container">
+        <div class="parameter-pair">
+          <input type="text" class="param-name" placeholder="Parameter Name" />
+          <input type="text" class="param-value" placeholder="Parameter Value" />
+          <button type="button" class="remove-param">Remove</button>
+        </div>
+      </div>
+      <button type="button" id="add-param">Add Parameter</button></br>
+      <button type="submit">Append</button>
+    </form>
+
+    <!-- Area to show the final result -->
+    <h3>Result [ Original URL, the parameters, and the new URL with the appended parameters.]</h3>
+    <pre id="result"></pre>
+
+    <!-- Area to show previously stored links -->
+    <h3>Saved Links [ All persisted links from DB.]</h3>
+    <ul id="linksList"></ul>
+
+    <!-- Load the TypeScript script (compiled by Vite) -->
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>
